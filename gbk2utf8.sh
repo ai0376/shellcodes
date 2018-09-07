@@ -22,18 +22,18 @@ fi
 }
 
 convert_curdir(){
-	
+    
 filelist="ls *.h *.cpp" 
 
 for file in $filelist
 do 
-	#convert $file
-	echo $file
+    convert $file
 done
+
 }
 
 if [[ "$1" != "" ]]; then
-	convert $1
+    convert $1
 else
-	convert_curdir
+    convert_curdir
 fi
